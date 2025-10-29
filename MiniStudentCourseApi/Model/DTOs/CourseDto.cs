@@ -7,5 +7,7 @@
         public string Description { get; set; }
         public string Location { get; set; }
         public int MonthlyPayment { get; set; }
+
+        public ICollection<StudentDto> Students { get; set; } = new List<StudentDto>();
     }
 }

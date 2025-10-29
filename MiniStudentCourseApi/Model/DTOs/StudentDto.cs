@@ -8,5 +8,7 @@
         public string Email { get; set; }
         public string Gender { get; set; }
         public DateTime BirthDay { get; set; }
+
+        public ICollection<CourseDto> Courses { get; set; } = new List<CourseDto>();
     }
 }

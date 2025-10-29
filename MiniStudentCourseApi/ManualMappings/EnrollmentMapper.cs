@@ -18,7 +18,7 @@ namespace MiniStudentCourseApi.ManualMappings
                 Id = dto.Id,
                 StudentId = dto.StudentId,
                 CourseId = dto.CourseId,
-                EnrollmentDate = dto.EnrollmentDate
+                EnrollmentDate = dto.EnrollmentDate,
             };
 
             if(!string.IsNullOrEmpty(dto.Student))

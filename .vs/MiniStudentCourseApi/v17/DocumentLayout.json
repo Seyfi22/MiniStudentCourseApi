@@ -3,40 +3,64 @@
   "WorkspaceRootPath": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|c:\\users\\lenovo\\source\\repos\\projects(guya)\\ministudentcourseapi\\ministudentcourseapi\\mappings\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|solutionrelative:ministudentcourseapi\\mappings\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|c:\\users\\lenovo\\source\\repos\\projects(guya)\\ministudentcourseapi\\ministudentcourseapi\\services\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|solutionrelative:ministudentcourseapi\\services\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|c:\\users\\lenovo\\source\\repos\\projects(guya)\\ministudentcourseapi\\ministudentcourseapi\\manualmappings\\enrollmentmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|solutionrelative:ministudentcourseapi\\manualmappings\\enrollmentmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|c:\\users\\lenovo\\source\\repos\\projects(guya)\\ministudentcourseapi\\ministudentcourseapi\\services\\interfaces\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|solutionrelative:ministudentcourseapi\\services\\interfaces\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|c:\\users\\lenovo\\source\\repos\\projects(guya)\\ministudentcourseapi\\ministudentcourseapi\\services\\implementations\\genericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|solutionrelative:ministudentcourseapi\\services\\implementations\\genericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|c:\\users\\lenovo\\source\\repos\\projects(guya)\\ministudentcourseapi\\ministudentcourseapi\\services\\interfaces\\igenericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|solutionrelative:ministudentcourseapi\\services\\interfaces\\igenericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|c:\\users\\lenovo\\source\\repos\\projects(guya)\\ministudentcourseapi\\ministudentcourseapi\\model\\dtos\\enrollmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|solutionrelative:ministudentcourseapi\\model\\dtos\\enrollmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|c:\\users\\lenovo\\source\\repos\\projects(guya)\\ministudentcourseapi\\ministudentcourseapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|solutionrelative:ministudentcourseapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|c:\\users\\lenovo\\source\\repos\\projects(guya)\\ministudentcourseapi\\ministudentcourseapi\\model\\entities\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|solutionrelative:ministudentcourseapi\\model\\entities\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|c:\\users\\lenovo\\source\\repos\\projects(guya)\\ministudentcourseapi\\ministudentcourseapi\\model\\dtos\\coursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|solutionrelative:ministudentcourseapi\\model\\dtos\\coursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|c:\\users\\lenovo\\source\\repos\\projects(guya)\\ministudentcourseapi\\ministudentcourseapi\\model\\dtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|solutionrelative:ministudentcourseapi\\model\\dtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|c:\\users\\lenovo\\source\\repos\\projects(guya)\\ministudentcourseapi\\ministudentcourseapi\\model\\dtos\\coursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|solutionrelative:ministudentcourseapi\\model\\dtos\\coursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|c:\\users\\lenovo\\source\\repos\\projects(guya)\\ministudentcourseapi\\ministudentcourseapi\\model\\entities\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|solutionrelative:ministudentcourseapi\\model\\entities\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|c:\\users\\lenovo\\source\\repos\\projects(guya)\\ministudentcourseapi\\ministudentcourseapi\\manualmappings\\coursemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|solutionrelative:ministudentcourseapi\\manualmappings\\coursemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|c:\\users\\lenovo\\source\\repos\\projects(guya)\\ministudentcourseapi\\ministudentcourseapi\\manualmappings\\enrollmentmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|solutionrelative:ministudentcourseapi\\manualmappings\\enrollmentmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|c:\\users\\lenovo\\source\\repos\\projects(guya)\\ministudentcourseapi\\ministudentcourseapi\\mappings\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|solutionrelative:ministudentcourseapi\\mappings\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|c:\\users\\lenovo\\source\\repos\\projects(guya)\\ministudentcourseapi\\ministudentcourseapi\\manualmappings\\studentmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|solutionrelative:ministudentcourseapi\\manualmappings\\studentmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|c:\\users\\lenovo\\source\\repos\\projects(guya)\\ministudentcourseapi\\ministudentcourseapi\\model\\entities\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|solutionrelative:ministudentcourseapi\\model\\entities\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|c:\\users\\lenovo\\source\\repos\\projects(guya)\\ministudentcourseapi\\ministudentcourseapi\\model\\entities\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|solutionrelative:ministudentcourseapi\\model\\entities\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|c:\\users\\lenovo\\source\\repos\\projects(guya)\\ministudentcourseapi\\ministudentcourseapi\\model\\entities\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|solutionrelative:ministudentcourseapi\\model\\entities\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|c:\\users\\lenovo\\source\\repos\\projects(guya)\\ministudentcourseapi\\ministudentcourseapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|solutionrelative:ministudentcourseapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F1D1476-0B77-4386-868A-7B3D6D154E4B}|MiniStudentCourseApi\\MiniStudentCourseApi.csproj|c:\\users\\lenovo\\source\\repos\\projects(guya)\\ministudentcourseapi\\ministudentcourseapi\\model\\configurations\\studentconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -101,62 +125,8 @@
               "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EnrollmentMapper.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\ManualMappings\\EnrollmentMapper.cs",
-              "RelativeDocumentMoniker": "MiniStudentCourseApi\\ManualMappings\\EnrollmentMapper.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\ManualMappings\\EnrollmentMapper.cs",
-              "RelativeToolTip": "MiniStudentCourseApi\\ManualMappings\\EnrollmentMapper.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwCwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T11:08:00.585Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "StudentDto.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\Model\\DTOs\\StudentDto.cs",
-              "RelativeDocumentMoniker": "MiniStudentCourseApi\\Model\\DTOs\\StudentDto.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\Model\\DTOs\\StudentDto.cs",
-              "RelativeToolTip": "MiniStudentCourseApi\\Model\\DTOs\\StudentDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T04:13:23.989Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AutoMapperProfile.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\Mappings\\AutoMapperProfile.cs",
-              "RelativeDocumentMoniker": "MiniStudentCourseApi\\Mappings\\AutoMapperProfile.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\Mappings\\AutoMapperProfile.cs",
-              "RelativeToolTip": "MiniStudentCourseApi\\Mappings\\AutoMapperProfile.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAYwB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T04:10:21.384Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Enrollment.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\Model\\Entities\\Enrollment.cs",
-              "RelativeDocumentMoniker": "MiniStudentCourseApi\\Model\\Entities\\Enrollment.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\Model\\Entities\\Enrollment.cs",
-              "RelativeToolTip": "MiniStudentCourseApi\\Model\\Entities\\Enrollment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T04:08:27.065Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "EnrollmentDto.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\Model\\DTOs\\EnrollmentDto.cs",
               "RelativeDocumentMoniker": "MiniStudentCourseApi\\Model\\DTOs\\EnrollmentDto.cs",
@@ -164,23 +134,185 @@
               "RelativeToolTip": "MiniStudentCourseApi\\Model\\DTOs\\EnrollmentDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T04:13:45.401Z"
+              "WhenOpened": "2025-10-28T04:13:45.401Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
+              "Title": "IGenericService.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\Services\\Interfaces\\IGenericService.cs",
+              "RelativeDocumentMoniker": "MiniStudentCourseApi\\Services\\Interfaces\\IGenericService.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\Services\\Interfaces\\IGenericService.cs",
+              "RelativeToolTip": "MiniStudentCourseApi\\Services\\Interfaces\\IGenericService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T04:30:47.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GenericService.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\Services\\Implementations\\GenericService.cs",
+              "RelativeDocumentMoniker": "MiniStudentCourseApi\\Services\\Implementations\\GenericService.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\Services\\Implementations\\GenericService.cs",
+              "RelativeToolTip": "MiniStudentCourseApi\\Services\\Implementations\\GenericService.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwD0AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T04:47:12.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\Services\\Implementations\\StudentService.cs",
+              "RelativeDocumentMoniker": "MiniStudentCourseApi\\Services\\Implementations\\StudentService.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\Services\\Implementations\\StudentService.cs",
+              "RelativeToolTip": "MiniStudentCourseApi\\Services\\Implementations\\StudentService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T05:26:26.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IStudentService.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\Services\\Interfaces\\IStudentService.cs",
+              "RelativeDocumentMoniker": "MiniStudentCourseApi\\Services\\Interfaces\\IStudentService.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\Services\\Interfaces\\IStudentService.cs",
+              "RelativeToolTip": "MiniStudentCourseApi\\Services\\Interfaces\\IStudentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T05:26:14.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "CourseDto.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\Model\\DTOs\\CourseDto.cs",
               "RelativeDocumentMoniker": "MiniStudentCourseApi\\Model\\DTOs\\CourseDto.cs",
               "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\Model\\DTOs\\CourseDto.cs",
               "RelativeToolTip": "MiniStudentCourseApi\\Model\\DTOs\\CourseDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T04:13:34.643Z"
+              "WhenOpened": "2025-10-28T04:13:34.643Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
+              "Title": "StudentDto.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\Model\\DTOs\\StudentDto.cs",
+              "RelativeDocumentMoniker": "MiniStudentCourseApi\\Model\\DTOs\\StudentDto.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\Model\\DTOs\\StudentDto.cs",
+              "RelativeToolTip": "MiniStudentCourseApi\\Model\\DTOs\\StudentDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T04:13:23.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\Model\\Entities\\Student.cs",
+              "RelativeDocumentMoniker": "MiniStudentCourseApi\\Model\\Entities\\Student.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\Model\\Entities\\Student.cs",
+              "RelativeToolTip": "MiniStudentCourseApi\\Model\\Entities\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T04:02:38.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CourseMapper.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\ManualMappings\\CourseMapper.cs",
+              "RelativeDocumentMoniker": "MiniStudentCourseApi\\ManualMappings\\CourseMapper.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\ManualMappings\\CourseMapper.cs",
+              "RelativeToolTip": "MiniStudentCourseApi\\ManualMappings\\CourseMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T06:24:43.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EnrollmentMapper.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\ManualMappings\\EnrollmentMapper.cs",
+              "RelativeDocumentMoniker": "MiniStudentCourseApi\\ManualMappings\\EnrollmentMapper.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\ManualMappings\\EnrollmentMapper.cs",
+              "RelativeToolTip": "MiniStudentCourseApi\\ManualMappings\\EnrollmentMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T11:08:00.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AutoMapperProfile.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\Mappings\\AutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "MiniStudentCourseApi\\Mappings\\AutoMapperProfile.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\Mappings\\AutoMapperProfile.cs",
+              "RelativeToolTip": "MiniStudentCourseApi\\Mappings\\AutoMapperProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T04:10:21.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "StudentMapper.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\ManualMappings\\StudentMapper.cs",
+              "RelativeDocumentMoniker": "MiniStudentCourseApi\\ManualMappings\\StudentMapper.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\ManualMappings\\StudentMapper.cs",
+              "RelativeToolTip": "MiniStudentCourseApi\\ManualMappings\\StudentMapper.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAkwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T06:04:56.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Course.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\Model\\Entities\\Course.cs",
+              "RelativeDocumentMoniker": "MiniStudentCourseApi\\Model\\Entities\\Course.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\Model\\Entities\\Course.cs",
+              "RelativeToolTip": "MiniStudentCourseApi\\Model\\Entities\\Course.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T04:07:21.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Enrollment.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\Model\\Entities\\Enrollment.cs",
+              "RelativeDocumentMoniker": "MiniStudentCourseApi\\Model\\Entities\\Enrollment.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\Model\\Entities\\Enrollment.cs",
+              "RelativeToolTip": "MiniStudentCourseApi\\Model\\Entities\\Enrollment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T04:08:27.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\Program.cs",
               "RelativeDocumentMoniker": "MiniStudentCourseApi\\Program.cs",
@@ -192,31 +324,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Course.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\Model\\Entities\\Course.cs",
-              "RelativeDocumentMoniker": "MiniStudentCourseApi\\Model\\Entities\\Course.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\Model\\Entities\\Course.cs",
-              "RelativeToolTip": "MiniStudentCourseApi\\Model\\Entities\\Course.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T04:07:21.993Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\Model\\Entities\\Student.cs",
-              "RelativeDocumentMoniker": "MiniStudentCourseApi\\Model\\Entities\\Student.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\Model\\Entities\\Student.cs",
-              "RelativeToolTip": "MiniStudentCourseApi\\Model\\Entities\\Student.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T04:02:38.885Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "StudentConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\Model\\Configurations\\StudentConfiguration.cs",
               "RelativeDocumentMoniker": "MiniStudentCourseApi\\Model\\Configurations\\StudentConfiguration.cs",
@@ -228,7 +336,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "StudentCourseDbContext.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\Data\\StudentCourseDbContext.cs",
               "RelativeDocumentMoniker": "MiniStudentCourseApi\\Data\\StudentCourseDbContext.cs",
@@ -240,7 +348,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "EnrollmentConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\Model\\Configurations\\EnrollmentConfiguration.cs",
               "RelativeDocumentMoniker": "MiniStudentCourseApi\\Model\\Configurations\\EnrollmentConfiguration.cs",
@@ -252,7 +360,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 18,
               "Title": "StudentGender.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\Model\\Enums\\StudentGender.cs",
               "RelativeDocumentMoniker": "MiniStudentCourseApi\\Model\\Enums\\StudentGender.cs",
@@ -264,7 +372,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
               "Title": "CourseConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\Model\\Configurations\\CourseConfiguration.cs",
               "RelativeDocumentMoniker": "MiniStudentCourseApi\\Model\\Configurations\\CourseConfiguration.cs",
@@ -276,7 +384,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 20,
               "Title": "MiniStudentCourseApi.csproj",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Projects(Guya)\\MiniStudentCourseApi\\MiniStudentCourseApi\\MiniStudentCourseApi.csproj",
               "RelativeDocumentMoniker": "MiniStudentCourseApi\\MiniStudentCourseApi.csproj",

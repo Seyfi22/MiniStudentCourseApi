@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using MiniStudentCourseApi.Model.DTOs;
 using MiniStudentCourseApi.Model.Entities;
-using MiniStudentCourseApi.Model.Enums;
 
 namespace MiniStudentCourseApi.Mappings
 {
@@ -10,13 +9,16 @@ namespace MiniStudentCourseApi.Mappings
         public AutoMapperProfile()
         {
             CreateMap<Student, StudentDto>()
-                .ForMember(dest => dest.Gender, opt => opt.MapFrom(src => src.Gender.ToString()));
+                .ForMember(dest => dest.Gender, opt => opt.MapFrom(src => src.Gender.ToString()))
+                .ForMember(dest => dest.Courses, opt => opt.MapFrom(src => src.Enrollments.Select(e => e.Course)));
 
-            CreateMap<StudentDto, Student>()
-                .ForMember(dest => dest.Gender, opt => opt.MapFrom(src => Enum.Parse<Gender>(src.Gender)));
+            // Manual Mapping was performed to solve the following mapping
+            //CreateMap<StudentDto, Student>()
+            //    .ForMember(dest => dest.Gender, opt => opt.MapFrom(src => Enum.Parse<Gender>(src.Gender)));
 
 
-            CreateMap<Course, CourseDto>().ReverseMap();
+            CreateMap<Course, CourseDto>()
+                .ForMember(dest => dest.Students, opt => opt.MapFrom(src => src.Enrollments.Select(e => e.Student)));
 
 
             CreateMap<Enrollment, EnrollmentDto>()
