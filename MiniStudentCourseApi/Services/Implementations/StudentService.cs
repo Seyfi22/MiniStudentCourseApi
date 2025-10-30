@@ -3,25 +3,67 @@ using Microsoft.EntityFrameworkCore;
 using MiniStudentCourseApi.Data;
 using MiniStudentCourseApi.Model.DTOs;
 using MiniStudentCourseApi.Model.Entities;
-using MiniStudentCourseApi.Services.Interfaces;
 
 namespace MiniStudentCourseApi.Services.Implementations
 {
-    //public class StudentService : GenericService<StudentDto, Student>, IStudentService
-    //{
-    //    public StudentService(StudentCourseDbContext context, IMapper mapper) : base(context, mapper)
-    //    {
+    public class StudentService : GenericService<StudentDto, Student>
+    {
+        public StudentService(StudentCourseDbContext context, IMapper mapper) : base(context, mapper) { }
 
-    //    }
+        public override List<StudentDto> GetAll()
+        {
+            var students = _context.Students
+                .Include(s => s.Enrollments)
+                .ThenInclude(e => e.Course)
+                .ToList();
 
-        //public List<StudentDto> GetStudentsWithCourses()
-        //{
-        //    var students = _dbSet.Include(s => s.Courses).ToList();
+            return _mapper.Map<List<StudentDto>>(students);
+        }
 
-        //    return _mapper.Map<List<StudentDto>>(students);
-        //} 
-        
-        
-        
-    //}
-}  // We'll go on here, inshAllah
+        public override StudentDto GetById(int id)
+        {
+            var student = _context.Students
+                .Include(s => s.Enrollments)
+                .ThenInclude(e => e.Course)
+                .FirstOrDefault(s => s.Id == id);
+
+            if(student == null)
+            {
+                throw new KeyNotFoundException($"Student with id {id} not found");
+            }
+
+            return _mapper.Map<StudentDto>(student);
+        }
+
+        public override StudentDto Add(StudentDto studentDto)
+        {
+            if(studentDto == null)
+            {
+                throw new ArgumentNullException(nameof(studentDto), "Dto can not be null");
+            }
+
+            var student = _mapper.Map<Student>(studentDto);
+
+            if(studentDto.Courses != null && studentDto.Courses.Any())
+            {
+                var existingCourseIds = _context.Courses
+                    .Where(c => studentDto.Courses.Select(sc => sc.Id).Contains(c.Id))
+                    .Select(c => c.Id)
+                    .ToList();
+
+                student.Enrollments = existingCourseIds.Select(id => new Enrollment
+                {
+                    CourseId = id,
+                    Student = student
+                }).ToList();
+            }
+
+            _context.Students.Add(student);
+            _context.SaveChanges();
+
+            return _mapper.Map<StudentDto>(student);
+        }
+
+
+    }
+}  

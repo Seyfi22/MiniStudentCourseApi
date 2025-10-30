@@ -5,7 +5,7 @@ using MiniStudentCourseApi.Services.Interfaces;
 
 namespace MiniStudentCourseApi.Services.Implementations
 {
-    public class GenericService<TDto, TEntity> : IGenericService<TDto> 
+    public class GenericService<TDto, TEntity> : IGenericService<TDto>
         where TEntity : class
     {
         protected readonly StudentCourseDbContext _context;
@@ -28,14 +28,25 @@ namespace MiniStudentCourseApi.Services.Implementations
         public virtual TDto GetById(int id)
         {
             var entity = _dbSet.Find(id);
+            if(entity == null)
+            {
+                throw new KeyNotFoundException($"Entity with id {id} not found");
+            }
+
             return _mapper.Map<TDto>(entity);
         }
 
         public virtual TDto Add(TDto dto)
         {
+            if(dto == null)
+            {
+                throw new ArgumentNullException(nameof(dto), "Dto can not be null");
+            }
+
             var entity = _mapper.Map<TEntity>(dto);
             _dbSet.Add(entity);
             _context.SaveChanges();
+
             return _mapper.Map<TDto>(entity);
         }
 
@@ -43,7 +54,7 @@ namespace MiniStudentCourseApi.Services.Implementations
         {
             if(dto == null)
             {
-                throw new ArgumentNullException(nameof(dto), "DTO can not be null");
+                throw new ArgumentNullException(nameof(dto), "Dto can not be null");
             }
 
             var entity = _dbSet.Find(id);
@@ -62,6 +73,7 @@ namespace MiniStudentCourseApi.Services.Implementations
         public virtual bool Delete(int id)
         {
             var entity = _dbSet.Find(id);
+
             if(entity == null)
             {
                 throw new KeyNotFoundException($"Entity with id {id} not found");
