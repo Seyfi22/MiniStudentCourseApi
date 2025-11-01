@@ -9,19 +9,15 @@ namespace MiniStudentCourseApi.Model.Configurations
         public void Configure(EntityTypeBuilder<Student> entity)
         {
             entity.Property(e => e.FirstName)
-                .IsRequired()
                 .HasMaxLength(50);
 
             entity.Property(e => e.LastName)
-                .IsRequired()
                 .HasMaxLength(50);
 
             entity.Property(e => e.Gender)
-                .HasConversion<string>()
-                .IsRequired();
+                .HasConversion<string>();
 
             entity.Property(e => e.Email)
-                .IsRequired()
                 .HasMaxLength(100);
         }
     }

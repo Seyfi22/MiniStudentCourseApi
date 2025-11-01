@@ -1,4 +1,4 @@
-﻿using MiniStudentCourseApi.Model.DTOs;
+﻿using MiniStudentCourseApi.DTOs;
 
 namespace MiniStudentCourseApi.Services.Interfaces
 {

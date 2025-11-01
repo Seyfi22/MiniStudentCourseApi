@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using MiniStudentCourseApi.Data;
+using MiniStudentCourseApi.DTOs;
 using MiniStudentCourseApi.ManualMappings;
-using MiniStudentCourseApi.Model.DTOs;
 using MiniStudentCourseApi.Model.Entities;
 using MiniStudentCourseApi.Services.Interfaces;
 

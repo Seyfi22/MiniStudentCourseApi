@@ -1,4 +1,4 @@
-﻿using MiniStudentCourseApi.Model.DTOs;
+﻿using MiniStudentCourseApi.DTOs;
 using MiniStudentCourseApi.Model.Entities;
 using MiniStudentCourseApi.Model.Enums;
 

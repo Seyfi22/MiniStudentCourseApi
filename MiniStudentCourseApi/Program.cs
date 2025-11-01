@@ -1,13 +1,20 @@
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using MiniStudentCourseApi.Data;
 using MiniStudentCourseApi.Mappings;
+using MiniStudentCourseApi.Validators;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
+
+builder.Services.AddFluentValidationAutoValidation();
+builder.Services.AddValidatorsFromAssemblyContaining<StudentDtoValidator>();
+// if we use one all other validators automatically work
 
 builder.Services.AddAutoMapper(cfg => 
     cfg.AddProfile<AutoMapperProfile>());
