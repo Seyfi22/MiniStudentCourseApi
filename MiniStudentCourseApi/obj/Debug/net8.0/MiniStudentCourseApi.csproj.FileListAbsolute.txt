@@ -171,3 +171,6 @@ C:\Users\LENOVO\source\repos\Projects(Guya)\MiniStudentCourseApi\MiniStudentCour
 C:\Users\LENOVO\source\repos\Projects(Guya)\MiniStudentCourseApi\MiniStudentCourseApi\obj\Debug\net8.0\MiniStudentCourseApi.genruntimeconfig.cache
 C:\Users\LENOVO\source\repos\Projects(Guya)\MiniStudentCourseApi\MiniStudentCourseApi\obj\Debug\net8.0\ref\MiniStudentCourseApi.dll
 C:\Users\LENOVO\source\repos\Projects(Guya)\MiniStudentCourseApi\MiniStudentCourseApi\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\LENOVO\source\repos\Projects(Guya)\MiniStudentCourseApi\MiniStudentCourseApi\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\LENOVO\source\repos\Projects(Guya)\MiniStudentCourseApi\MiniStudentCourseApi\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Users\LENOVO\source\repos\Projects(Guya)\MiniStudentCourseApi\MiniStudentCourseApi\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll

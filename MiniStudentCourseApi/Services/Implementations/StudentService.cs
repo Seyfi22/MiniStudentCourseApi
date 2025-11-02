@@ -37,37 +37,6 @@ namespace MiniStudentCourseApi.Services.Implementations
             return _mapper.Map<StudentDto>(student);
         }
 
-        #region Previous Add
-        //public override StudentDto Add(StudentDto studentDto)
-        //{
-        //    if(studentDto == null)
-        //    {
-        //        throw new ArgumentNullException(nameof(studentDto), "Dto can not be null");
-        //    }
-
-        //    var student = _mapper.Map<Student>(studentDto);
-
-        //    if(studentDto.Courses != null && studentDto.Courses.Any())
-        //    {
-        //        var existingCourseIds = _context.Courses
-        //            .Where(c => studentDto.Courses.Select(sc => sc.Id).Contains(c.Id))
-        //            .Select(c => c.Id)
-        //            .ToList();
-
-        //        student.Enrollments = existingCourseIds.Select(id => new Enrollment
-        //        {
-        //            CourseId = id,
-        //            Student = student
-        //        }).ToList();
-        //    }
-
-        //    _context.Students.Add(student);
-        //    _context.SaveChanges();
-
-        //    return _mapper.Map<StudentDto>(student);
-        //}
-        #endregion
-
         public override StudentDto Add(StudentDto studentDto)
         {
             if (studentDto == null)
