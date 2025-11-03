@@ -2,7 +2,8 @@ using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
 using MiniStudentCourseApi.Data;
-using MiniStudentCourseApi.DTOs;
+using MiniStudentCourseApi.DTOs.Course;
+using MiniStudentCourseApi.DTOs.Student;
 using MiniStudentCourseApi.Mappings;
 using MiniStudentCourseApi.Services;
 using MiniStudentCourseApi.Services.Implementations;
@@ -16,7 +17,10 @@ builder.Services.AddControllers();
 
 // FluentValidation configuration
 builder.Services.AddFluentValidationAutoValidation();
+builder.Services.AddFluentValidationClientsideAdapters();
 builder.Services.AddValidatorsFromAssemblyContaining<StudentDtoValidator>();
+builder.Services.AddValidatorsFromAssemblyContaining<CourseDtoValidator>();
+
 
 // AutoMapper configuration
 builder.Services.AddAutoMapper(cfg =>
@@ -29,8 +33,8 @@ builder.Services.AddDbContext<StudentCourseDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 
 // Register Generic Services
-builder.Services.AddScoped<IGenericService<StudentDto>, StudentService>();
-builder.Services.AddScoped<IGenericService<CourseDto>, CourseService>();
+builder.Services.AddScoped<IStudentService, StudentService>();
+builder.Services.AddScoped<ICourseService, CourseService>();
 
 // Swagger configuration
 builder.Services.AddEndpointsApiExplorer();

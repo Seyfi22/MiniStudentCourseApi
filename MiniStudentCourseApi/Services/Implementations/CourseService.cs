@@ -1,14 +1,15 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using MiniStudentCourseApi.Data;
-using MiniStudentCourseApi.DTOs;
+using MiniStudentCourseApi.DTOs.Course;
 using MiniStudentCourseApi.ManualMappings;
 using MiniStudentCourseApi.Model.Entities;
+using MiniStudentCourseApi.Model.Enums;
 using MiniStudentCourseApi.Services.Interfaces;
 
 namespace MiniStudentCourseApi.Services.Implementations
 {
-    public class CourseService : GenericService<CourseDto, Course>
+    public class CourseService : GenericService<CourseDto, Course>, ICourseService
     {
         public CourseService(StudentCourseDbContext context, IMapper mapper) : base(context, mapper) { }
 
@@ -37,59 +38,15 @@ namespace MiniStudentCourseApi.Services.Implementations
             return _mapper.Map<CourseDto>(course);
         }
 
-        #region Previous Add
-        //public override CourseDto Add(CourseDto courseDto)
-        //{
-        //    if(courseDto == null)
-        //    {
-        //        throw new ArgumentNullException(nameof(courseDto), "Dto can not be null");
-        //    }
 
-        //    var course = _mapper.Map<Course>(courseDto);
-
-        //    if(courseDto.Students != null && courseDto.Students.Any())
-        //    {
-        //        var existingStudentIds = _context.Students
-        //            .Where(s => courseDto.Students.Select(cs => cs.Id).Contains(s.Id))
-        //            .Select(s => s.Id)
-        //            .ToList();
-
-        //        course.Enrollments = existingStudentIds.Select(id => new Enrollment
-        //        {
-        //            StudentId = id,
-        //            Course = course
-        //        }).ToList();
-        //    }
-
-        //    _context.Courses.Add(course);
-        //    _context.SaveChanges();
-
-        //    return _mapper.Map<CourseDto>(course);
-        //}
-        #endregion
-
-        public override CourseDto Add(CourseDto courseDto)
+        public CourseDto AddWithStudents(CreateCourseDto createCourseDto)
         {
-            if (courseDto == null)
+            if (createCourseDto == null)
             {
-                throw new ArgumentNullException(nameof(courseDto), "Dto can not be null");
+                throw new ArgumentNullException(nameof(createCourseDto), "Dto can not be null");
             }
 
-            var course = CourseMapper.MapCourseDtoToCourse(courseDto);
-
-            if (courseDto.Students != null && courseDto.Students.Any())
-            {
-                var existingStudentIds = _context.Students
-                    .Where(s => courseDto.Students.Select(cs => cs.Id).Contains(s.Id))
-                    .Select(s => s.Id)
-                    .ToList();
-
-                course.Enrollments = existingStudentIds.Select(id => new Enrollment
-                {
-                    StudentId = id,
-                    Course = course
-                }).ToList();
-            }
+            var course = _mapper.Map<Course>(createCourseDto);
 
             _context.Courses.Add(course);
             _context.SaveChanges();

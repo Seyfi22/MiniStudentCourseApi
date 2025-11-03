@@ -1,10 +1,9 @@
-﻿using MiniStudentCourseApi.DTOs;
+﻿using MiniStudentCourseApi.DTOs.Course;
 
 namespace MiniStudentCourseApi.Services.Interfaces
 {
-    public interface ICourseService
+    public interface ICourseService : IGenericService<CourseDto>
     {
-        public List<CourseDto> GetCoursesWithStudents();
-        public CourseDto GetCourseWithStudentsById(int id);
+        public CourseDto AddWithStudents(CreateCourseDto createCourseDto);
     }
 }

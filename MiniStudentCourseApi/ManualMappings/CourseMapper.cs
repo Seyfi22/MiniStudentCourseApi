@@ -1,4 +1,4 @@
-﻿using MiniStudentCourseApi.DTOs;
+﻿using MiniStudentCourseApi.DTOs.Course;
 using MiniStudentCourseApi.Model.Entities;
 
 namespace MiniStudentCourseApi.ManualMappings

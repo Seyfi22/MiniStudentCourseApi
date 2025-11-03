@@ -1,14 +1,15 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using MiniStudentCourseApi.Data;
-using MiniStudentCourseApi.DTOs;
+using MiniStudentCourseApi.DTOs.Student;
 using MiniStudentCourseApi.ManualMappings;
 using MiniStudentCourseApi.Model.Entities;
 using MiniStudentCourseApi.Model.Enums;
+using MiniStudentCourseApi.Services.Interfaces;
 
 namespace MiniStudentCourseApi.Services.Implementations
 {
-    public class StudentService : GenericService<StudentDto, Student>
+    public class StudentService : GenericService<StudentDto, Student>, IStudentService
     {
         public StudentService(StudentCourseDbContext context, IMapper mapper) : base(context, mapper) { }
 
@@ -37,28 +38,14 @@ namespace MiniStudentCourseApi.Services.Implementations
             return _mapper.Map<StudentDto>(student);
         }
 
-        public override StudentDto Add(StudentDto studentDto)
+        public StudentDto AddWithCourses(CreateStudentDto createStudentDto)
         {
-            if (studentDto == null)
+            if (createStudentDto == null)
             {
-                throw new ArgumentNullException(nameof(studentDto), "Dto can not be null");
+                throw new ArgumentNullException(nameof(createStudentDto), "Dto can not be null");
             }
 
-            var student = StudentMapper.MapStudentDtoToStudent(studentDto);
-
-            if (studentDto.Courses != null && studentDto.Courses.Any())
-            {
-                var existingCourseIds = _context.Courses
-                    .Where(c => studentDto.Courses.Select(sc => sc.Id).Contains(c.Id))
-                    .Select(c => c.Id)
-                    .ToList();
-
-                student.Enrollments = existingCourseIds.Select(id => new Enrollment
-                {
-                    CourseId = id,
-                    Student = student
-                }).ToList();
-            }
+            var student = _mapper.Map<Student>(createStudentDto);
 
             _context.Students.Add(student);
             _context.SaveChanges();

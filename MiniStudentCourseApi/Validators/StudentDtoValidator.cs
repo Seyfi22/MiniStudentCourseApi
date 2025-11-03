@@ -1,5 +1,5 @@
 ﻿using FluentValidation;
-using MiniStudentCourseApi.DTOs;
+using MiniStudentCourseApi.DTOs.Student;
 using MiniStudentCourseApi.Model.Enums;
 
 namespace MiniStudentCourseApi.Validators

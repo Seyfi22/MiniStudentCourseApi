@@ -1,13 +1,12 @@
-﻿namespace MiniStudentCourseApi.DTOs
+﻿namespace MiniStudentCourseApi.DTOs.Course
 {
-    public class CourseDto
+    public class CreateCourseDto
     {
-        public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public string Location { get; set; }
         public int MonthlyPayment { get; set; }
 
-        public ICollection<StudentDto> Students { get; set; } = new List<StudentDto>();
+        public ICollection<CreateStudentInCourseDto> Students { get; set; } = new List<CreateStudentInCourseDto>();
     }
 }

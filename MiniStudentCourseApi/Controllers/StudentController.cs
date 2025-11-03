@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using MiniStudentCourseApi.DTOs;
+using MiniStudentCourseApi.DTOs.Student;
+using MiniStudentCourseApi.Services.Implementations;
 using MiniStudentCourseApi.Services.Interfaces;
 
 namespace MiniStudentCourseApi.Controllers
@@ -9,9 +10,9 @@ namespace MiniStudentCourseApi.Controllers
     [ApiController]
     public class StudentController : ControllerBase
     {
-        private readonly IGenericService<StudentDto> _studentService;
+        private readonly IStudentService _studentService;
 
-        public StudentController(IGenericService<StudentDto> studentService)
+        public StudentController(IStudentService studentService)
         {
             _studentService = studentService;
         }
@@ -39,8 +40,8 @@ namespace MiniStudentCourseApi.Controllers
             }
         }
 
-        [HttpPost]
-        public IActionResult Add([FromBody] StudentDto studentDto)
+        [HttpPost("add-with-courses")]
+        public IActionResult AddWithCourses([FromBody] CreateStudentDto createStudentDto)
         {
             if(!ModelState.IsValid)
             {
@@ -49,7 +50,7 @@ namespace MiniStudentCourseApi.Controllers
 
             try
             {
-                var addedStudent = _studentService.Add(studentDto);
+                var addedStudent = _studentService.AddWithCourses(createStudentDto);
                 return CreatedAtAction(nameof(GetById), new { id = addedStudent.Id }, addedStudent);
             }
             catch(Exception ex)
