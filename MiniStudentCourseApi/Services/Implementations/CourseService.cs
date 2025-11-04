@@ -54,15 +54,16 @@ namespace MiniStudentCourseApi.Services.Implementations
             return _mapper.Map<CourseDto>(course);
         }
 
-        public override CourseDto Update(int id, CourseDto courseDto)
+        public CourseDto UpdateCourse(int id, UpdateCourseDto updateCourseDto)
         {
-            if(courseDto == null)
+            if(updateCourseDto == null)
             {
-                throw new ArgumentNullException(nameof(courseDto), "Dto can not be null");
+                throw new ArgumentNullException(nameof(updateCourseDto), "Dto can not be null");
             }
 
             var course = _context.Courses
                 .Include(c => c.Enrollments)
+                .ThenInclude(e => e.Student)
                 .FirstOrDefault(c => c.Id == id);
 
             if(course == null)
@@ -70,23 +71,23 @@ namespace MiniStudentCourseApi.Services.Implementations
                 throw new KeyNotFoundException($"Course with id {id} not found");
             }
 
-            course.Name = courseDto.Name;
-            course.Description = courseDto.Description;
-            course.Location = courseDto.Location;
-            course.MonthlyPayment = courseDto.MonthlyPayment;
+            course.Name = updateCourseDto.Name;
+            course.Description = updateCourseDto.Description;
+            course.Location = updateCourseDto.Location;
+            course.MonthlyPayment = updateCourseDto.MonthlyPayment;
 
-            if(courseDto.Students != null)
+            course.Enrollments.Clear();
+
+            if(updateCourseDto.Students != null && updateCourseDto.Students.Any())
             {
-                course.Enrollments.Clear();
-
-                var existingStudentIds = _context.Students
-                    .Where(s => courseDto.Students.Select(cs => cs.Id).Contains(s.Id))
+                var validStudentIds = _context.Students
+                    .Where(s => updateCourseDto.Students.Contains(s.Id))
                     .Select(s => s.Id)
                     .ToList();
 
-                course.Enrollments = existingStudentIds.Select(id => new Enrollment
+                course.Enrollments = validStudentIds.Select(sid => new Enrollment
                 {
-                    StudentId = id,
+                    StudentId = sid,
                     CourseId = course.Id
                 }).ToList();
             }
@@ -94,11 +95,6 @@ namespace MiniStudentCourseApi.Services.Implementations
             _context.SaveChanges();
 
             return _mapper.Map<CourseDto>(course);
-        }
-
-        public override bool Delete(int id)
-        {
-            return base.Delete(id);
         }
     }
 }

@@ -11,6 +11,7 @@ namespace MiniStudentCourseApi.Mappings
     {
         public AutoMapperProfile()
         {
+            // While getting the student(s)
             CreateMap<Student, StudentDto>()
                 .ForMember(dest => dest.Gender, opt => opt.MapFrom(src => src.Gender.ToString()))
                 .ForMember(dest => dest.Courses, opt => opt.MapFrom(src => src.Enrollments.Select(e => new CourseInStudentDto
@@ -19,7 +20,7 @@ namespace MiniStudentCourseApi.Mappings
                     Name = e.Course.Name
                 })));
 
-            // While posting new student
+            // While posting a new student
             CreateMap<CreateStudentDto, Student>()
                 .ForMember(dest => dest.Enrollments, opt => opt.MapFrom(src => src.Courses.Select(c => new Enrollment
                 {
@@ -32,12 +33,12 @@ namespace MiniStudentCourseApi.Mappings
                     }
                 })));
 
-            // Manual Mapping was performed to solve the following mapping
-            //CreateMap<StudentDto, Student>()
-            //    .ForMember(dest => dest.Gender, opt => opt.MapFrom(src => Enum.Parse<Gender>(src.Gender)));
+            // While updating the student
+            CreateMap<UpdateStudentDto, Student>()
+                .ForMember(dest => dest.Enrollments, opt => opt.Ignore());
 
 
-            // While getting course(s)
+            // While getting the course(s)
             CreateMap<Course, CourseDto>()
                 .ForMember(dest => dest.Students, opt => opt.MapFrom(src => src.Enrollments.Select(e => new StudentInCourseDto
                 {
@@ -46,7 +47,7 @@ namespace MiniStudentCourseApi.Mappings
                 })));
 
 
-            // While posting new course
+            // While posting a new course
             CreateMap<CreateCourseDto, Course>()
                 .ForMember(dest => dest.Enrollments, opt => opt.MapFrom(src => src.Students.Select(s => new Enrollment
                 {
@@ -60,12 +61,9 @@ namespace MiniStudentCourseApi.Mappings
                     }
                 })));
 
-
-            CreateMap<Enrollment, EnrollmentDto>()
-                .ForMember(dest => dest.Student, opt => opt.MapFrom(src => src.Student.FirstName + " " + src.Student.LastName))
-                .ForMember(dest => dest.Course, opt => opt.MapFrom(src => src.Course.Name));
-
-            // The reverse mapping(Dto -> Entity) won't work, so we are gonna use Manual Mapping
-        }
+            // While updating the course
+            CreateMap<UpdateCourseDto, Course>()
+                .ForMember(dest => dest.Enrollments, opt => opt.Ignore());
+           }
     }
 }

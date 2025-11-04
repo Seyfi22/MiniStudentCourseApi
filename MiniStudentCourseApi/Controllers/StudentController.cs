@@ -60,7 +60,7 @@ namespace MiniStudentCourseApi.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult Update(int id, [FromBody] StudentDto studentDto)
+        public IActionResult UpdateStudent(int id, [FromBody] UpdateStudentDto updateStudentDto)
         {
             if (!ModelState.IsValid)
             {
@@ -69,7 +69,7 @@ namespace MiniStudentCourseApi.Controllers
 
             try
             {
-                return Ok(_studentService.Update(id, studentDto));
+                return Ok(_studentService.UpdateStudent(id, updateStudentDto));
             }
             catch(KeyNotFoundException ex)
             {

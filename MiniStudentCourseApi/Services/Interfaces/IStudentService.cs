@@ -5,5 +5,6 @@ namespace MiniStudentCourseApi.Services.Interfaces
     public interface IStudentService : IGenericService<StudentDto>
     {
         public StudentDto AddWithCourses(CreateStudentDto createStudentDto);
+        public StudentDto UpdateStudent(int id, UpdateStudentDto updateStudentDto);
     }
 }
