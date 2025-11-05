@@ -8,7 +8,7 @@ using MiniStudentCourseApi.Mappings;
 using MiniStudentCourseApi.Services;
 using MiniStudentCourseApi.Services.Implementations;
 using MiniStudentCourseApi.Services.Interfaces;
-using MiniStudentCourseApi.Validators;
+using MiniStudentCourseApi.Validators.Student;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,10 +16,14 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 // FluentValidation configuration
-builder.Services.AddFluentValidationAutoValidation();
-builder.Services.AddFluentValidationClientsideAdapters();
-builder.Services.AddValidatorsFromAssemblyContaining<StudentDtoValidator>();
-builder.Services.AddValidatorsFromAssemblyContaining<CourseDtoValidator>();
+
+builder.Services.AddControllers()
+    .AddFluentValidation(fv =>
+    {
+        fv.RegisterValidatorsFromAssemblyContaining<CreateStudentDtoValidator>();
+        fv.ImplicitlyValidateChildProperties = true;
+    });
+
 
 
 // AutoMapper configuration

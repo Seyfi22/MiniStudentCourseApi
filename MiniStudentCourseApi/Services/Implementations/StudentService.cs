@@ -2,7 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using MiniStudentCourseApi.Data;
 using MiniStudentCourseApi.DTOs.Student;
-using MiniStudentCourseApi.ManualMappings;
 using MiniStudentCourseApi.Model.Entities;
 using MiniStudentCourseApi.Model.Enums;
 using MiniStudentCourseApi.Services.Interfaces;

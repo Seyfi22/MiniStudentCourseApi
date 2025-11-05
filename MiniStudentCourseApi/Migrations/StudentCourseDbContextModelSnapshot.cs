@@ -50,6 +50,15 @@ namespace MiniStudentCourseApi.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("Description")
+                        .IsUnique();
+
+                    b.HasIndex("Location")
+                        .IsUnique();
+
+                    b.HasIndex("Name")
+                        .IsUnique();
+
                     b.ToTable("Courses");
                 });
 
@@ -110,6 +119,9 @@ namespace MiniStudentCourseApi.Migrations
                         .HasColumnType("nvarchar(50)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("Email")
+                        .IsUnique();
 
                     b.ToTable("Students");
                 });

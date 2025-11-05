@@ -16,6 +16,11 @@ namespace MiniStudentCourseApi.Model.Configurations
 
             entity.Property(e => e.Location)
                 .HasMaxLength(255);
+
+            entity.HasIndex(e => e.Name).IsUnique();
+            entity.HasIndex(e => e.Description).IsUnique();
+            entity.HasIndex(e => e.Location).IsUnique();
+
         }
     }
 }

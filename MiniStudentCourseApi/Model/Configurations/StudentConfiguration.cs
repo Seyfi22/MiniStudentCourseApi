@@ -19,6 +19,8 @@ namespace MiniStudentCourseApi.Model.Configurations
 
             entity.Property(e => e.Email)
                 .HasMaxLength(100);
+
+            entity.HasIndex(e => e.Email).IsUnique();
         }
     }
 }

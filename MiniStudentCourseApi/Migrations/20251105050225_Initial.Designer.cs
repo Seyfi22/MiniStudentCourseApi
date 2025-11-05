@@ -12,8 +12,8 @@ using MiniStudentCourseApi.Data;
 namespace MiniStudentCourseApi.Migrations
 {
     [DbContext(typeof(StudentCourseDbContext))]
-    [Migration("20251027053310_Init")]
-    partial class Init
+    [Migration("20251105050225_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -52,6 +52,15 @@ namespace MiniStudentCourseApi.Migrations
                         .HasColumnType("nvarchar(50)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("Description")
+                        .IsUnique();
+
+                    b.HasIndex("Location")
+                        .IsUnique();
+
+                    b.HasIndex("Name")
+                        .IsUnique();
 
                     b.ToTable("Courses");
                 });
@@ -113,6 +122,9 @@ namespace MiniStudentCourseApi.Migrations
                         .HasColumnType("nvarchar(50)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("Email")
+                        .IsUnique();
 
                     b.ToTable("Students");
                 });

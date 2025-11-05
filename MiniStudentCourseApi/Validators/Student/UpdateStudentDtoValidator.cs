@@ -1,12 +1,13 @@
 ﻿using FluentValidation;
+using MiniStudentCourseApi.Data;
 using MiniStudentCourseApi.DTOs.Student;
 using MiniStudentCourseApi.Model.Enums;
 
-namespace MiniStudentCourseApi.Validators
+namespace MiniStudentCourseApi.Validators.Student
 {
-    public class StudentDtoValidator : AbstractValidator<StudentDto>
+    public class UpdateStudentDtoValidator : AbstractValidator<UpdateStudentDto>
     {
-        public StudentDtoValidator()
+        public UpdateStudentDtoValidator(StudentCourseDbContext context)
         {
             RuleFor(s => s.FirstName)
                 .NotEmpty().WithMessage("First name is required")
@@ -24,7 +25,10 @@ namespace MiniStudentCourseApi.Validators
             RuleFor(s => s.Email)
                 .NotEmpty().WithMessage("Email is required")
                 .EmailAddress().WithMessage("Invalid email format")
-                .MaximumLength(100).WithMessage("Email must be at most 100 characters");
+                .MaximumLength(100).WithMessage("Email must be at most 100 characters")
+                .Must(e => !context.Students.Any(s => s.Email == e))
+                    .WithMessage("This email has already been registered")
+                .When(s => !string.IsNullOrEmpty(s.Email));
 
             RuleFor(s => s.BirthDay)
                 .NotEmpty().WithMessage("Birthday is required")
@@ -32,7 +36,6 @@ namespace MiniStudentCourseApi.Validators
                     .WithMessage("Student must be at least 18 years old")
                 .Must(date => date >= DateTime.Now.AddYears(-35))
                     .WithMessage("Student must be at most 35 years old");
-
         }
     }
 }
