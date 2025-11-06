@@ -67,6 +67,15 @@ namespace MiniStudentCourseApi.Controllers
                 return BadRequest(ModelState);
             }
 
+            if (!string.IsNullOrEmpty(updateStudentDto.Email))
+            {
+                if(_studentService.IsEmailRegisteredByAnotherAccount(id, updateStudentDto.Email))
+                    {
+                        ModelState.AddModelError("Email", "This email has already been registered");
+                        return BadRequest(ModelState);
+                    }
+            }
+
             try
             {
                 return Ok(_studentService.UpdateStudent(id, updateStudentDto));

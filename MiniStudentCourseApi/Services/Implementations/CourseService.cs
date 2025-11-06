@@ -94,5 +94,10 @@ namespace MiniStudentCourseApi.Services.Implementations
 
             return _mapper.Map<CourseDto>(course);
         }
+
+        public bool IsCourseNameRegisteredByAnotherAccount(int currentCourseId, string courseName)
+        {
+            return _context.Courses.Any(c => c.Name.ToLower() == courseName.ToLower() && c.Id != currentCourseId);
+        }
     }
 }

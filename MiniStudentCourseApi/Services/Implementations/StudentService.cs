@@ -93,8 +93,12 @@ namespace MiniStudentCourseApi.Services.Implementations
 
             _context.SaveChanges();
 
-            return _mapper.Map<StudentDto>(student);
-            
+            return _mapper.Map<StudentDto>(student);      
+        }
+
+        public bool IsEmailRegisteredByAnotherAccount(int currentStudentId, string email)
+        {
+            return _context.Students.Any(s => s.Email.ToLower() == email.ToLower() && s.Id != currentStudentId);
         }
     }
 }  

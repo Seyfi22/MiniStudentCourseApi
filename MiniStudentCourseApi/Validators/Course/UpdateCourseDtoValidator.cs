@@ -11,8 +11,6 @@ namespace MiniStudentCourseApi.Validators.Course
             RuleFor(c => c.Name)
                 .NotEmpty().WithMessage("Course name is required")
                 .MaximumLength(50).WithMessage("Course name must be at most 50 characters")
-                .Must(n => !context.Courses.Any(c => c.Name.ToLower() == n.ToLower()))
-                    .WithMessage("This course name already exists")
                 .When(c => !string.IsNullOrEmpty(c.Name));
 
             RuleFor(c => c.Description)

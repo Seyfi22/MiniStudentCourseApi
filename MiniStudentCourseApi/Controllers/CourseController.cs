@@ -60,11 +60,20 @@ namespace MiniStudentCourseApi.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdateCourse(int id, [FromBody] UpdateCourseDto updateCourseDto)
+        public IActionResult UpdateCourse(int id, [FromBody] UpdateCourseDto updateCourseDto)               
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
+            }
+
+            if (!string.IsNullOrEmpty(updateCourseDto.Name))
+            {
+                if(_courseService.IsCourseNameRegisteredByAnotherAccount(id, updateCourseDto.Name))
+                {
+                    ModelState.AddModelError("Name", "This course name already exists");
+                    return BadRequest(ModelState);
+                }
             }
 
             try

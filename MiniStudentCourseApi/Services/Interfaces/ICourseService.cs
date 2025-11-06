@@ -6,5 +6,6 @@ namespace MiniStudentCourseApi.Services.Interfaces
     {
         public CourseDto AddWithStudents(CreateCourseDto createCourseDto);
         public CourseDto UpdateCourse(int id, UpdateCourseDto updateCourseDto);
+        public bool IsCourseNameRegisteredByAnotherAccount(int currentCourseId, string courseName);
     }
 }
